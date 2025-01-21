@@ -1,26 +1,25 @@
 import metahorseImg from "../images/Metahorse.png";
-import { AnimatedSection } from "./AnimatedSection";
 import Timeline0 from "../images/Timeline0.svg";
 const handleEnter = (e) => {};
 const handleLeave = () => {
   //setGameIconIndex(0);
 };
 export const Metahorse = () => {
-  const getFadeTopStyles = (isFadeLeftInViewPort) => ({
-    transition: "all 0.7s ease-in",
-    opacity: isFadeLeftInViewPort ? "1" : "0",
-    transform: isFadeLeftInViewPort ? "" : "translateY(50px)",
-  });
-  const getFadeLeftStyles = (isFadeLeftInViewPort) => ({
-    transition: "all 1.5s ease-in",
-    opacity: isFadeLeftInViewPort ? "1" : "0",
-    transform: isFadeLeftInViewPort ? "" : "translateX(100%)",
-  });
+  // const getFadeTopStyles = (isFadeLeftInViewPort) => ({
+  //   transition: "all 0.7s ease-in",
+  //   opacity: isFadeLeftInViewPort ? "1" : "0",
+  //   transform: isFadeLeftInViewPort ? "" : "translateY(50px)",
+  // });
+  // const getFadeLeftStyles = (isFadeLeftInViewPort) => ({
+  //   transition: "all 1.5s ease-in",
+  //   opacity: isFadeLeftInViewPort ? "1" : "0",
+  //   transform: isFadeLeftInViewPort ? "" : "translateX(100%)",
+  // });
   return (
     <div className="Metahorse">
       <div class="gradient gradient--4"></div>
       <div class="gradient gradient--5"></div>
-      <AnimatedSection getStyles={getFadeLeftStyles}>
+      {/* <AnimatedSection getStyles={getFadeLeftStyles}> */}
         <div className="topTitle">
           <div id="line1"></div>
 
@@ -41,7 +40,7 @@ export const Metahorse = () => {
 
           <div id="line2"></div>
         </div>
-      </AnimatedSection>
+      {/* </AnimatedSection> */}
       <div className="bottomImg">
         <div
           className="metahorseImg"
@@ -49,7 +48,7 @@ export const Metahorse = () => {
             backgroundImage: `url(${metahorseImg})`,
           }}
         ></div>
-        <AnimatedSection getStyles={getFadeTopStyles}>
+        {/* <AnimatedSection getStyles={getFadeTopStyles}> */}
           <div className="progressBar">
             <ul className="events">
               <li
@@ -114,7 +113,7 @@ export const Metahorse = () => {
               </li>
             </ul>
           </div>
-        </AnimatedSection>
+        {/* </AnimatedSection> */}
       </div>
     </div>
   );

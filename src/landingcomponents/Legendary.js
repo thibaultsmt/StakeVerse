@@ -1,15 +1,14 @@
 import LegendaryImg from "../images/Legendary.png";
-import { AnimatedSection } from "./AnimatedSection";
 export const Legendary = () => {
-  const getFadeRightStyles = (isFadeLeftInViewPort) => ({
-    transition: "all 1.5s ease-in",
-    opacity: isFadeLeftInViewPort ? "1" : "0",
-    transform: isFadeLeftInViewPort ? "" : "translateX(100%)",
-  });
+  // const getFadeRightStyles = (isFadeLeftInViewPort) => ({
+  //   transition: "all 1.5s ease-in",
+  //   opacity: isFadeLeftInViewPort ? "1" : "0",
+  //   transform: isFadeLeftInViewPort ? "" : "translateX(100%)",
+  // });
   return (
     <div className="Legendary">
       <div class="gradient gradient--6"></div>
-      <AnimatedSection getStyles={getFadeRightStyles}>
+      {/* <AnimatedSection getStyles={getFadeRightStyles}> */}
         <div className="topTitle">
           <div id="line1"></div>
 
@@ -24,7 +23,7 @@ export const Legendary = () => {
 
           <div id="line2"></div>
         </div>
-      </AnimatedSection>
+      {/* </AnimatedSection> */}
 
       <div className="bottomImg">
         <div className="rightText">

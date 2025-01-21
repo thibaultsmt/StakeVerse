@@ -1,26 +1,25 @@
-import GImg from "../images/G.png";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { AnimatedSection } from "./AnimatedSection";
-import Gate from "../images/Gate.svg";
-import Mexc from "../images/Mexc.svg";
 import Coin from "../images/Coin.svg";
+import GImg from "../images/G.png";
+import Gate from "../images/Gate.svg";
 import Market from "../images/Market.svg";
+import Mexc from "../images/Mexc.svg";
 
 export const Munityhub = () => {
-  const getFadeTopStyles = (isFadeLeftInViewPort) => ({
-    transition: "all 1s ease-in",
-    opacity: isFadeLeftInViewPort ? "1" : "0",
-    transform: isFadeLeftInViewPort ? "" : "translateY(100px)",
-  });
-  const getFadeLeftStyles = (isFadeLeftInViewPort) => ({
-    transition: "all 1.5s ease-in",
-    opacity: isFadeLeftInViewPort ? "1" : "0",
-    transform: isFadeLeftInViewPort ? "" : "translateX(100%)",
-  });
+  // const getFadeTopStyles = (isFadeLeftInViewPort) => ({
+  //   transition: "all 1s ease-in",
+  //   opacity: isFadeLeftInViewPort ? "1" : "0",
+  //   transform: isFadeLeftInViewPort ? "" : "translateY(100px)",
+  // });
+  // const getFadeLeftStyles = (isFadeLeftInViewPort) => ({
+  //   transition: "all 1.5s ease-in",
+  //   opacity: isFadeLeftInViewPort ? "1" : "0",
+  //   transform: isFadeLeftInViewPort ? "" : "translateX(100%)",
+  // });
   return (
     <div className="Munityhub">
       <div class="gradient gradient--2"></div>
-      <AnimatedSection getStyles={getFadeLeftStyles}>
+      {/* <AnimatedSection getStyles={getFadeLeftStyles}> */}
         <div className="topTitle">
           <div id="line1"></div>
 
@@ -41,9 +40,9 @@ export const Munityhub = () => {
 
           <div id="line2"></div>
         </div>
-      </AnimatedSection>
+      {/* </AnimatedSection> */}
 
-      <AnimatedSection getStyles={getFadeTopStyles}>
+      {/* <AnimatedSection getStyles={getFadeTopStyles}> */}
         <div className="imgTitle">
           <div class="border-gradient1">
             <div className="borderTitle leftTitle">
@@ -148,7 +147,7 @@ export const Munityhub = () => {
             </div>
           </div>
         </div>
-      </AnimatedSection>
+      {/* </AnimatedSection> */}
     </div>
   );
 };

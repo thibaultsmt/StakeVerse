@@ -1,34 +1,33 @@
-import GameImg from "../images/Games.png";
+import "bootstrap-icons/font/bootstrap-icons.css";
 import Game1 from "../images/Game1.png";
 import Game2 from "../images/Game2.png";
 import Game3 from "../images/Game3.png";
-import "bootstrap-icons/font/bootstrap-icons.css";
-import { AnimatedSection } from "./AnimatedSection";
-const getFadeTopStyles = (isFadeLeftInViewPort) => ({
-  transition: "all 1s ease-in",
-  opacity: isFadeLeftInViewPort ? "1" : "0",
-  transform: isFadeLeftInViewPort ? "" : "translateY(100px)",
-});
-const getFadeTopStylesL = (isFadeLeftInViewPort) => ({
-  transition: "all 1s ease-in",
-  opacity: isFadeLeftInViewPort ? "1" : "0",
-  transform: isFadeLeftInViewPort ? "" : "translateY(100px)",
-});
-const getFadeTopStylesC = (isFadeLeftInViewPort) => ({
-  transition: "all 1.5s ease-in",
-  opacity: isFadeLeftInViewPort ? "1" : "0",
-  transform: isFadeLeftInViewPort ? "" : "translateY(100px)",
-});
-const getFadeTopStylesR = (isFadeLeftInViewPort) => ({
-  transition: "all 0.5s ease-in",
-  opacity: isFadeLeftInViewPort ? "1" : "0",
-  transform: isFadeLeftInViewPort ? "" : "translateY(100px)",
-});
+import GameImg from "../images/Games.png";
+// const getFadeTopStyles = (isFadeLeftInViewPort) => ({
+//   transition: "all 1s ease-in",
+//   opacity: isFadeLeftInViewPort ? "1" : "0",
+//   transform: isFadeLeftInViewPort ? "" : "translateY(100px)",
+// });
+// const getFadeTopStylesL = (isFadeLeftInViewPort) => ({
+//   transition: "all 1s ease-in",
+//   opacity: isFadeLeftInViewPort ? "1" : "0",
+//   transform: isFadeLeftInViewPort ? "" : "translateY(100px)",
+// });
+// const getFadeTopStylesC = (isFadeLeftInViewPort) => ({
+//   transition: "all 1.5s ease-in",
+//   opacity: isFadeLeftInViewPort ? "1" : "0",
+//   transform: isFadeLeftInViewPort ? "" : "translateY(100px)",
+// });
+// const getFadeTopStylesR = (isFadeLeftInViewPort) => ({
+//   transition: "all 0.5s ease-in",
+//   opacity: isFadeLeftInViewPort ? "1" : "0",
+//   transform: isFadeLeftInViewPort ? "" : "translateY(100px)",
+// });
 export const Games = () => {
   return (
     <div className="Games">
       <div class="gradient gradient--3"></div>
-      <AnimatedSection getStyles={getFadeTopStyles}>
+      {/* <AnimatedSection getStyles={getFadeTopStyles}> */}
         <div className="topTitle">
           <div id="line"></div>
 
@@ -42,8 +41,8 @@ export const Games = () => {
 
           <div id="line"></div>
         </div>
-      </AnimatedSection>
-      <AnimatedSection getStyles={getFadeTopStyles}>
+      {/* </AnimatedSection> */}
+      {/* <AnimatedSection getStyles={getFadeTopStyles}> */}
         <div className="topText">
           <div>
             <img src={GameImg} alt="GImg" />
@@ -57,10 +56,10 @@ export const Games = () => {
             </span>
           </div>
         </div>
-      </AnimatedSection>
+      {/* </AnimatedSection> */}
 
       <div className="imgTitle">
-        <AnimatedSection getStyles={getFadeTopStylesL}>
+        {/* <AnimatedSection getStyles={getFadeTopStylesL}> */}
           <div className="leftTitle">
             <div
               className="GameImage"
@@ -83,8 +82,8 @@ export const Games = () => {
               </div>
             </div>
           </div>
-        </AnimatedSection>
-        <AnimatedSection getStyles={getFadeTopStylesC}>
+        {/* </AnimatedSection> */}
+        {/* <AnimatedSection getStyles={getFadeTopStylesC}> */}
           <div className="centerTitle">
             <div
               className="GameImage"
@@ -106,8 +105,8 @@ export const Games = () => {
               </div>
             </div>
           </div>
-        </AnimatedSection>
-        <AnimatedSection getStyles={getFadeTopStylesR}>
+        {/* </AnimatedSection> */}
+        {/* <AnimatedSection getStyles={getFadeTopStylesR}> */}
           <div className="rightTitle">
             <div
               className="GameImage"
@@ -129,7 +128,7 @@ export const Games = () => {
               </div>
             </div>
           </div>
-        </AnimatedSection>
+        {/* </AnimatedSection> */}
       </div>
     </div>
   );
